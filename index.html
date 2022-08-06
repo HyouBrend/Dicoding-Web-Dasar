@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="page icon" href="assets/image/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>Hyou Musik</title>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="assets/image/logo.png" width="250px" height="200px"><br> 
+            <h1><font color="3330E4"><b>Hyou</font> <font color="FAEA48"><b>Musik</font></b></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentangkami">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="slide">
+        <article id="gudang" class="card">
+            <h2>Gudang</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="assets/image/gitar.jpg" class="image" alt="Gitar" width="500px" height= "715px"></div>
+                  <div class="swiper-slide"><img src="assets/image/listrik.jpg" class="image" alt="Gitar Listrik" width="500px" height= "715px"></div>
+                  <div class="swiper-slide"><img src="assets/image/drum.jpg" class="image" alt="Drum" width="500px" height= "715px"></div>
+                    <div class="swiper-slide"><img src="assets/image/piano.jpg" class="image" alt="Piano" width="500px" height= "715px"></div>
+                    <div class="swiper-slide"><img src="assets/image/bass.jpg" class="image" alt="Bass" width="500px" height= "715px"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+        </div>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                autoplay: {
+                   Delay: 3000,
+                   disableOnInteraction: false,
+                },
+                loop: true,
+
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                },
+
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });
+        </script>
+
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Menu</h2>
+                </header>
+                <section>
+                    <div class="menu">
+                <ul>
+                  <p><li><a href="gitar">Gitar</a></li></p>
+                  <p><li><a href="gitarbass">Gitar Bass</a></li></p>
+                  <p><li><a href="piano">Piano</a></li></p>
+                  <p><li><a href="keyboard">Keyboard</a></li></p>
+                  <p><li><a href="drum">Drum</a></li></p>
+                </ul> </div>
+                </section>
+            </article>
+
+            <article class="profile card">
+                <header>
+                    <h2>Identitas</h2>
+                    <figure>
+                        <img src="assets/image/fotoprofil.jpg" width="200px" height="200px">
+                        <figcaption><b>Theodorus Christian Siringo Ringo</b></figcaption>
+                    </figure>
+                </header>
+                <section>
+                    <table>
+                        <tr>
+                            <p align="justify">Saya programmer berusia 18 tahun dengan membuat program aplikasi maupun website (<a href="https://github.com/HyouBrend">GitHub</a>)</p>
+                        </tr>
+                    </table>
+                    </section>
+            </article>
+        </aside>
+
+        <div class="populer">
+            <article id="menu" class="card">
+                <h2 id="populer">Populer</h2>
+
+                <img src="assets/image/gitarfender.jpg" width="130" height="100" alt="float" style="float: left; margin: 10px;">
+                <p><b>Gitar Fender</b><br><font color="#B983FF"><b>Rp. 1.800.000 - Rp. 8.000.000</b></font></p>
+                <p>Fender Musical Instruments Corporation, atau lebih dikenal sebagai Fender, adalah pabrikan alat musik dawai dan pengeras suaranya, seperti gitar elektrik berbahan dasar padat.</p>
+               
+                <img src="assets/image/gitaryamaha.jpg" width="130" height="100" alt="waffle" style="float: left; margin: 10px;">
+                <p><b>Gitar Yamaha</b><br><font color="#B983FF"><b>Rp. 750.000 - Rp. 3.000.000</b></font></p>
+                <p>Gitar Yamaha adalah salah satu brand gitar yang jadi favorit karena terkenal dengan kualitasnya. Tidak hanya itu, harga gitar Yamaha juga cukup beragam tergantung jenisnya seperti gitar akustik atau elektrik.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>Submission Belajar Dasar Pemrograman Web &#169; 2022 - Theodorus Christian Siringo Ringo</p>
+    </footer>
+</body>
+
+</html>
